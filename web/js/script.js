@@ -100,63 +100,96 @@ function whoseTurn(v){
     }
 
     function checkWinner(a) {
+      var winner = document.getElementById("WinnerMsg");
         //Check rows
         if ((a[0] + a[1] + a[2] == 3) && (a[0] != 0 && a[1] != 0 && a[2] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[0] + a[1] + a[2] == 6) && (a[0] != 0 && a[1] != 0 && a[2] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         if ((a[3] + a[4] + a[5] == 3) && (a[3] != 0 && a[4] != 0 && a[5] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[3] + a[4] + a[5] == 6) && (a[3] != 0 && a[4] != 0 && a[5] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         if ((a[6] + a[7] + a[8] == 3) && (a[6] != 0 && a[7] != 0 && a[8] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[6] + a[7] + a[8] == 6) && (a[6] != 0 && a[7] != 0 && a[8] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         //Check columns
         if ((a[0] + a[3] + a[6] == 3) && (a[0] != 0 && a[3] != 0 && a[6] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[0] + a[3] + a[6] == 6) && (a[0] != 0 && a[3] != 0 && a[6] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         if ((a[1] + a[4] + a[7] == 3) && (a[1] != 0 && a[4] != 0 && a[7] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[1] + a[4] + a[7] == 6) && (a[1] != 0 && a[4] != 0 && a[7] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         if ((a[2] + a[5] + a[8] == 3) && (a[2] != 0 && a[5] != 0 && a[8] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[2] + a[5] + a[8] == 6) && (a[2] != 0 && a[5] != 0 && a[8] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         //Check diagonals
         if ((a[0] + a[4] + a[8] == 3) && (a[0] != 0 && a[4] != 0 && a[8] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[0] + a[4] + a[8] == 6) && (a[0] != 0 && a[4] != 0 && a[8] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        
         if ((a[2] + a[4] + a[6] == 3) && (a[2] != 0 && a[4] != 0 && a[6] != 0)) {
           console.log("Winner is X!")
+          winner.innerHTML = "Winner is X!";
+          document.getElementById('board').style.display="none";
         }
         if ((a[2] + a[4] + a[6] == 6) && (a[2] != 0 && a[4] != 0 && a[6] != 0)) {
           console.log("Winner is O!")
+          winner.innerHTML = "Winner is O!";
+          document.getElementById('board').style.display="none";
         }
        }
 

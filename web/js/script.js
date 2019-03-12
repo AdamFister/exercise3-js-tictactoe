@@ -48,13 +48,13 @@ function gameBoard() {
 
     for (var j = 0; j < 3; j++) {
       //       var key = "index" + String(i) + String(j);
-      str2 += "<div class='col' id ='test_col'>";
+      str2 += "<div class='col-xs-4' id ='test_col'>";
       var key2 = String(i) + String(j);
 
       str2 += "<button type='button' ";
       str2 += "id='" + key2 + "' ";
 
-      str2 += "class='btn btn-secondary' onclick=whoseTurn('" + key2 + "')>!</button>";
+      str2 += "class='btn btn-secondary color' onclick=whoseTurn('" + key2 + "')>!</button>";
       str2 += "</div>";
     }
 
@@ -76,7 +76,7 @@ let arrWinner = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function whoseTurn(v) {
   console.log(v);
-  
+
 
   var obj = document.getElementById(v);
 
@@ -85,7 +85,7 @@ function whoseTurn(v) {
     alreadyClicked.push(v);
     let newButton = assignIndex(v);
     obj.innerHTML = "X";
-    
+
     arrWinner[newButton] = 1;
     document.getElementById("WhoseTurn").innerHTML = "Now it's O's turn";
     checkWinner(arrWinner);
@@ -96,14 +96,14 @@ function whoseTurn(v) {
     alreadyClicked.push(v);
     let newButton = assignIndex(v);
     obj.innerHTML = "0";
-    
+
     arrWinner[newButton] = 2;
     document.getElementById("WhoseTurn").innerHTML = "Now it's X's turn";
     checkWinner(arrWinner);
   }
 
   function checkWinner(a) {
-    
+
     var winner = document.getElementById("WinnerMsg");
     //Check rows
     if ((a[0] + a[1] + a[2] == 3) && (a[0] != 0 && a[1] != 0 && a[2] != 0)) {

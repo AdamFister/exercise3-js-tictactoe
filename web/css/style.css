@@ -11,3 +11,19 @@ h1, h3 {
     font-family: 'Roboto Slab', serif;
     color: rgb(2, 75, 2);
 }
+
+.color {
+    background-color: rgb(122, 10, 187);
+    padding: 20px 27px;
+    font-size: 27px;
+    
+}
+
+.test_row {
+    margin-bottom: 24px;
+}
+
+#board {
+    margin: 0px auto;
+    max-width: 180px;
+}
